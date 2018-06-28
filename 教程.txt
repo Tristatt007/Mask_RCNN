@@ -1,0 +1,21 @@
+1.下载并安装Python3.6的64位版的anaconda，安装过程中出现的选项如果看不懂就默认。
+
+2.把C:\ProgramData\Anaconda3\Scripts添加到系统环境环境中（详细操作在百度搜索“win10添加系统环境变量”）
+
+3.在当前目录（这个文件所在）按住shift点击右键，选择“在此处打开命令窗口”。
+
+4.输入“conda create -n mrcnn python=3.6 pip”，并按照提示完成后续步骤。
+
+5.完成后输入“activate mrcnn”
+
+7.接着输入“pip3 install -r requirements.txt”，按提示完成操作
+
+8.在输入“python3 setup.py install”
+
+9.从 https://github.com/matterport/Mask_RCNN/releases/download/v2.0/mask_rcnn_coco.h5 下载一个东西并放到这个文件夹
+
+10.回到命令窗口输入“pip3 install git+https://github.com/philferriere/cocoapi.git#subdirectory=PythonAPI”
+
+11.在当前目录创建一个叫“video”的文件夹，并把需要用的监控视频放进去
+
+11.然后回到命令窗口中输入“jupyter notebook”会弹出一个网页显示你文件夹里的所有文件，打开samples文件夹中的demo.ipynd文件然后点击网页正上方的run按键一直run到最后一个格子，等一会就会看到结果
